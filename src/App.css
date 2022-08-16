@@ -7,14 +7,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-
 .dice {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 24px;
 }
-
 .die {
   height: 50px;
   width: 50px;
@@ -25,4 +24,17 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.button {
+  background-color: #5035FF;
+  color: white;
+  font-weight: 700;
+  margin-top: 32px;
+  padding: 12px 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #5035ffe3;
 }

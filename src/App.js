@@ -13,6 +13,10 @@ function App() {
     return diceArray
   }
 
+  function roll() {
+    setDice(newDice())
+  }
+
   const diceComponents = dice.map(die => <Die value={die} />)
 
   return (
@@ -20,6 +24,7 @@ function App() {
       <div className="dice">
         {diceComponents}
       </div>
+      <h3 className="button" onClick={roll}>Roll</h3>
     </main>
   );
 }
