@@ -1,6 +1,6 @@
 main {
   background-color: #F5F5F5;
-  height: 80vh;
+  height: 470px;
   width: 80vw;
   margin: 10vh auto;
   border-radius: 5px;
@@ -9,10 +9,15 @@ main {
   align-items: center;
   flex-direction: column;
 }
+p {
+  margin-block: 0.4rem;
+  font-size: 13px;
+}
 .dice {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 24px;
+  margin: 2rem auto 1rem;
 }
 .die {
   height: 50px;
@@ -25,12 +30,15 @@ main {
   align-items: center;
   cursor: pointer;
 }
+.die.green {
+  background-color: #59E391;
+}
 .button {
   background-color: #5035FF;
   color: white;
   font-weight: 700;
-  margin-top: 32px;
   padding: 12px 40px;
+  margin-bottom: 1.5rem;
   border-radius: 4px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   cursor: pointer;
